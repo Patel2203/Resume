@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kunj Patel - Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Kunj Patel</h1>
+            <p class="title">Full Stack Developer</p>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#interests" class="nav-link">Interests</a></li>
+                </ul>
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section about">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="greeting" id="dynamicGreeting"></div>
+                <p>
+                    Motivated and detail-oriented Computer Science student with a strong foundation in software development, data structures, and algorithms. Skilled in building web applications using React.js, Node.js, MySQL, and Python. Passionate about problem-solving and eager to apply technical knowledge to real-world projects. Seeking a Software Engineer role to contribute to innovative solutions while continuing to grow as a developer.   
+                </p>
+            
+            </div>
+        </section>
+
+        <section id="experience" class="section experience">
+            <div class="container">
+                <h2>Work Experience</h2>
+                <div class="experience-timeline">
+                    <article class="job-entry">
+                        <h3>AngularJS Development Intern</h3>
+                        <div class="job-meta">
+                            <span class="company">RK Websoft Technologies Pvt Ltd</span>
+                            <span class="duration">May 2022 – June 2022</span>
+                        </div>
+                        <ol class="responsibilities">
+                            <li class="tooltip-trigger" data-tooltip="Built responsive web applications using AngularJS framework">Gained hands-on experience in building responsive web applications</li>
+                            <li class="tooltip-trigger" data-tooltip="Created dynamic and interactive user interfaces">Implemented dynamic user interfaces</li>
+                            <li class="tooltip-trigger" data-tooltip="Enhanced front-end performance and functionality">Optimized front-end functionality</li>
+                        </ol>
+                        <details>
+                            <summary>Additional Details</summary>
+                            <p>In AngularJS Development, where gained hands-on experience in building responsive web applications, implementing dynamic user interfaces, and optimizing front-end functionality. Worked on real-time projects that enhanced my skills in JavaScript, HTML, CSS, and AngularJS framework, while also improving problem-solving and teamwork abilities.</p>
+                        </details>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section education">
+            <div class="container">
+                <h2>Education</h2>
+                <div class="table-controls">
+                    <button id="sortByGPA" class="sort-btn">Sort by GPA</button>
+                </div>
+                <div class="table-wrapper">
+                    <table class="education-table">
+                        <thead>
+                            <tr>
+                                <th>Degree</th>
+                                <th>Institution</th>
+                                <th>Graduation Date</th>
+                                <th>GPA</th>
+                                <th>Achievements</th>
+                            </tr>
+                        </thead>
+                        <tbody id="educationTableBody">
+                            <tr>
+                                <td>Bachelor of Science in Computer Science</td>
+                                <td>
+                                    <div class="institution">
+                                        <img src="F:\CS690\Resume\parul.png" alt="parul Logo" class="institution-logo">
+                                       Parul University, Vadodara, Gujarat
+                                    </div>
+                                </td>
+                                <td>June 2023</td>
+                                <td data-gpa="3.8">3.25</td>
+                                <td>Gained hands-on experience in Python, Advanced Java, Software Engineering, Web Development.</td>
+                            </tr>
+                            <tr>
+                                <td>Master in Computer and information Sciences</td>
+                                <td>
+                                    <div class="institution">
+                                        <img src="F:\CS690\Resume\Liu.jpeg" alt="liu Logo" class="institution-logo">
+                                        Long Island University, Brooklyn, NY
+                                    </div>
+                                </td>
+                                <td>January 2026</td>
+                                <td data-gpa="4.0">3.8</td>
+                                <td>Developed expertise in Applications in Analytics, Machine Learning in Bioinformatics, Artificial Intelligence.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skill-controls">
+                    <button class="skill-filter active" data-level="all">All Skills</button>
+                    <button class="skill-filter" data-level="beginner">Beginner</button>
+                    <button class="skill-filter" data-level="intermediate">Intermediate</button>
+                    <button class="skill-filter" data-level="advanced">Advanced</button>
+                </div>
+
+                <fieldset class="skill-group">
+                    <legend>Frontend Technologies</legend>
+                    <div class="skill-item" data-level="advanced">
+                        <label>HTML5</label>
+                        <div class="progress-container">
+                            <progress value="0" max="100" class="skill-progress" data-value="95">95%</progress>
+                            <span class="progress-text">95%</span>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-level="advanced">
+                        <label>CSS</label>
+                        <div class="progress-container">
+                            <progress value="0" max="100" class="skill-progress" data-value="90">90%</progress>
+                            <span class="progress-text">90%</span>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-level="advanced">
+                        <label>JavaScript</label>
+                        <div class="progress-container">
+                            <progress value="0" max="100" class="skill-progress" data-value="92">92%</progress>
+                            <span class="progress-text">92%</span>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-level="advanced">
+                        <label>React.js</label>
+                        <div class="progress-container">
+                            <progress value="0" max="100" class="skill-progress" data-value="88">88%</progress>
+                            <span class="progress-text">88%</span>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="skill-group">
+                    <legend>Backend Technologies</legend>
+                    <div class="skill-item" data-level="advanced">
+                        <label>Node.js</label>
+                        <div class="progress-container">
+                            <progress value="0" max="100" class="skill-progress" data-value="85">85%</progress>
+                            <span class="progress-text">85%</span>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-level="intermediate">
+                        <label>Python</label>
+                        <div class="progress-container">
+                            <progress value="0" max="100" class="skill-progress" data-value="75">75%</progress>
+                            <span class="progress-text">75%</span>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-level="intermediate">
+                        <label>MYSQL</label>
+                        <div class="progress-container">
+                            <progress value="0" max="100" class="skill-progress" data-value="80">80%</progress>
+                            <span class="progress-text">80%</span>
+                        </div>
+                    </div>
+                </fieldset>
+
+                
+            </div>
+        </section>
+
+        <section id="projects" class="section projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project-filters">
+                    <button class="project-filter active" data-tech="all">All</button>
+                    <button class="project-filter" data-tech="python">Python</button>
+                    <button class="project-filter" data-tech="embedded">Embedded</button>
+                    <button class="project-filter" data-tech="android">Android</button>
+                </div>
+                
+                <div class="projects-grid">
+                    <article class="project-card" data-tech="python">
+                        <div class="card-front">
+
+                            <h3>Predicting CRISPR-Cas9 On-Target Editing Efficiency</h3>
+                            <p>Machine learning model for genomic sequence analysis</p>
+                        </div>
+                        <div class="card-back">
+                            <dl class="project-details">
+                                <dt>Description</dt>
+                                <dd>Led end-to-end research to analyze genomic sequences and build a machine learning model predicting CRISPR-Cas9 on-target editing efficiency. Accomplished 42% accuracy and submitted a research analysis as part of coursework.</dd>
+                                <dt>Technologies</dt>
+                                <dd>Python, NumPy, Pandas, BeautifulSoup, Scikit-learn, Matplotlib, Plotly</dd>
+                                <dt>Duration</dt>
+                                <dd>Jan 2025 - Apr 2025</dd>
+                                <dt>Key Achievements</dt>
+                                <dd>Collected and cleaned data, trained multiple models (XGBoost, SVM, KNN), visualized results, showcasing end-to-end data science skills in biology applications</dd>
+                            </dl>
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-tech="embedded">
+                        <div class="card-front">
+                            <h3>Smart Home Automation</h3>
+                            <p>Final Year Diploma Project - Automated control system</p>
+                        </div>
+                        <div class="card-back">
+                            <dl class="project-details">
+                                <dt>Description</dt>
+                                <dd>Smart home automated control system is an integrated system designed to provide easy-to-use home automation. Operated through an Android application, enabling convenient control.</dd>
+                                <dt>Technologies</dt>
+                                <dd>Embedded C, Android Application Interface</dd>
+                                <dt>Key Features</dt>
+                                <dd>Portable system that is easy to install, configure, run, and maintain. Wireless design for flexible setup and use. Centralized control unit to manage household appliances efficiently.</dd>
+                                <dt>Project Type</dt>
+                                <dd>Final Year Diploma Project</dd>
+                            </dl>
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-tech="android">
+                        <div class="card-front">
+                            <h3>Indoor Positioning System</h3>
+                            <p>Final Year Bachelor's Project - Wi-Fi based location detection</p>
+                        </div>
+                        <div class="card-back">
+                            <dl class="project-details">
+                                <dt>Description</dt>
+                                <dd>Developed an Indoor Positioning System (IPS) using Wi-Fi RSSI data for accurate indoor location detection. Applied data preprocessing techniques and implemented machine learning algorithms for position classification.</dd>
+                                <dt>Technologies</dt>
+                                <dd>Android, MySQL, Django</dd>
+                                <dt>Key Features</dt>
+                                <dd>Data preprocessing (normalization, noise reduction), machine learning algorithms (KNN, Decision Trees), interactive maps with real-time location feedback, applications in navigation and asset tracking.</dd>
+                                <dt>Project Type</dt>
+                                <dd>Final Year Bachelor's Project</dd>
+                            </dl>
+                            <a href="#" class="project-link">View Project</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="section certifications">
+            <div class="container">
+                <h2>Certifications & Achievements</h2>
+                <dl class="certifications-list">
+                    <div class="certification-item featured">
+                        <dt class="certification-badge">
+                            <i class="fas fa-award"></i>
+                            Basics of Python
+                        </dt>
+                        <dd>Infosys Springboard (Nov 2022): Completed coursework covering Python programming fundamentals, problem-solving, and application development.</dd>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <section id="interests" class="section interests">
+            <div class="container">
+                <h2>Interests & Hobbies</h2>
+                <div class="interests-gallery">
+                    <figure class="interest-item" data-interest="cricket">
+                        <img src="cricket.jpeg" alt="Cricket">
+                        <figcaption>Cricket</figcaption>
+                    </figure>
+                    
+                    <figure class="interest-item" data-interest="photography">
+                        <img src="photography.jpeg" alt="Photography">
+                        <figcaption>Photography</figcaption>
+                    </figure>
+                    
+                    <figure class="interest-item" data-interest="music">
+                        <img src="music.jpeg" alt="Listening Music">
+                        <figcaption>Listening Music</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Let's Connect!</p>
+            <div class="contact-links">
+                <a href="mailto:kunjpatel2203@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/kunj-patel-119050241/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Patel2203"><i class="fab fa-github"></i></a>
+            </div>
+            <button class="back-to-top" id="backToTop">
+                <i class="fas fa-arrow-up"></i>
+            </button>
+        </div>
+    </footer>
+
+  
+    <div id="interestModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <div class="modal-body">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="tooltip" class="tooltip"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
